@@ -1,0 +1,16 @@
+<form>
+    <h2>Idade</h2>
+    <button type="submit" id="butao" value="Idade" onclick="idade()">Calcular</button>
+    <a href="/sistema"><button id="butao">Idade</button></a>
+</form>
+
+<script>
+    function idade(){
+        var nascimento = Number.parseFloat(window.prompt("Digite seu ano de nascimento: "));
+        window.alert(`Voçe nasceu em ${nascimento}`)
+        var date = new Date()
+        var data = date.getFullYear()
+        var idade = data - nascimento
+        window.alert(`Sua idade atual e ${idade}`)
+    }
+</script>

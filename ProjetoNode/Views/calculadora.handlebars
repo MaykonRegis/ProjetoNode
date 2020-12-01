@@ -1,0 +1,17 @@
+<form>
+    <H2>Calculadora</H2>
+    <button type="submit" id="butao" value="Calculadora" onclick="calculadora()">Calcular</button>
+</form>
+<script>
+    function calculadora(){
+        var numero = Number.parseFloat(window.prompt(`Escolha um numero: `))
+        var continuar = "Sim";
+        var c = 1;
+        while(continuar == "Sim"){
+            var multi = Number.parseFloat(window.prompt('Escolha um numero para multiplicação: '))
+            var continuar = window.prompt("Deseja continuar [Sim/Não]? ");
+        }
+        window.alert(`Numero escolhido foi ${numero} e ${multi}`)
+    }
+
+</script>

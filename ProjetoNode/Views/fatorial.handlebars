@@ -1,0 +1,26 @@
+ <form>
+    <h2>Fatorial</h2>
+    <button type="submit" id="butao" value="Fatorial" onclick="fatorial()">Calcular</button>
+    <a href="/Sistema"><button id="butao">Voltar</button></a>
+    <div id="res">
+
+    </div>
+</form>
+
+<script>
+    function fatorial(){
+        window.confirm("Sistema de verificação de fatorial ");
+        var res = window.document.getElementById('res');
+        var numero = Number.parseInt(window.prompt("Escolha um numero: "));
+        var resultado = window.alert(`Seu numero escolhido foi -> ${numero}`)
+        var fat = 1;
+        var c = numero;
+        while(c >= 1){
+            fat = fat * c;
+            c--;
+        }
+        window.alert(`O numero fatoriado foi  != ${fat}`)
+    }
+   
+
+</script>

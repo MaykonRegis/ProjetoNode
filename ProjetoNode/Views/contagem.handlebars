@@ -1,0 +1,15 @@
+<form method="POST">
+    <h2>Contagem</h2>
+    <button type="submit" id="butao" value="contar" onclick="contar()">Contar</button>
+</form>
+<script>
+     function contar(){
+         var container = window.document.getElementById('container')
+        var numero = Number.parseInt(window.prompt("Digite um numero para ser contado: "))
+        for(var c = 1; c <= numero; c++){
+            container.innerHTML += `<strong> ${c}</strong>`
+        }
+        window.alert(`O numero digitado foi ${numero}`)
+        
+    }
+</script>
